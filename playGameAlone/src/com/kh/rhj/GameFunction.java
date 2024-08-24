@@ -12,27 +12,27 @@ public class GameFunction {
 
 	public int printMenu() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú È¥ÀÚ ³î±â ¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
+		System.out.println("â˜†â˜…â˜†â˜…â˜†â˜… í˜¼ì ë†€ê¸° â˜†â˜…â˜†â˜…â˜†â˜…");
 		System.out.println();
-		System.out.println("1. ³» ÇÁ·ÎÇÊ ÀÛ¼ºÇØº¸±â");
-		System.out.println("2. ³» ÇÁ·ÎÇÊ º¸±â");
-		System.out.println("3. °ÔÀÓÇÏ±â");
-		System.out.println("4. È¥ÀÚ³î±â ³¡");
+		System.out.println("1. ë‚´ í”„ë¡œí•„ ì‘ì„±í•´ë³´ê¸°");
+		System.out.println("2. ë‚´ í”„ë¡œí•„ ë³´ê¸°");
+		System.out.println("3. ê²Œì„í•˜ê¸°");
+		System.out.println("4. í˜¼ìë†€ê¸° ë");
 		System.out.println();
-		System.out.print("¹«¾ùÀ» ¼±ÅÃÇÒ±î? : ");
-//		System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
+		System.out.print("ë¬´ì—‡ì„ ì„ íƒí• ê¹Œ? : ");
+//		System.out.println("â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…");
 		int menu = sc.nextInt();
 		return menu;
 	}
 
 	public void inputProfile() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú ³» ÇÁ·ÎÇÊÀ» ÀÛ¼ºÇØº¸ÀÚ!¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
-		System.out.print("ÀÌ¸§ : ");
+		System.out.println("â˜†â˜…â˜†â˜…â˜†â˜… ë‚´ í”„ë¡œí•„ì„ ì‘ì„±í•´ë³´ì!â˜†â˜…â˜†â˜…â˜†â˜…");
+		System.out.print("ì´ë¦„ : ");
 		String name = sc.next();
-		System.out.print("ÁÁ¾ÆÇÏ´Â À½½Ä : ");
+		System.out.print("ì¢‹ì•„í•˜ëŠ” ìŒì‹ : ");
 		String food = sc.next();
-		System.out.print("ÁÁ¾ÆÇÏ´Â »ö±ò : ");
+		System.out.print("ì¢‹ì•„í•˜ëŠ” ìƒ‰ê¹” : ");
 		String color = sc.next();
 		game.setName(name);
 		game.setFood(food);
@@ -40,42 +40,42 @@ public class GameFunction {
 	}
 
 	public void printProfile() {
-		System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú ³» ÇÁ·ÎÇÊ º¸±â ¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
-		System.out.println("³» ÀÌ¸§Àº " + game.getName() +"¾ß ^^*");
-		System.out.println("ÁÁ¾ÆÇÏ´Â À½½ÄÀº " + game.getFood() + "ÀÌ°í");
-		System.out.println("ÁÁ¾ÆÇÏ´Â »ö±òÀº " + game.getColor() + "ÀÌ¾ß¤¾¤¾");
+		System.out.println("â˜†â˜…â˜†â˜…â˜†â˜… ë‚´ í”„ë¡œí•„ ë³´ê¸° â˜†â˜…â˜†â˜…â˜†â˜…");
+		System.out.println("ë‚´ ì´ë¦„ì€ " + game.getName() +"ì•¼ ^^*");
+		System.out.println("ì¢‹ì•„í•˜ëŠ” ìŒì‹ì€ " + game.getFood() + "ì´ê³ ");
+		System.out.println("ì¢‹ì•„í•˜ëŠ” ìƒ‰ê¹”ì€ " + game.getColor() + "ì´ì•¼ã…ã…");
 		System.out.println();
 
 	}
 
 	public void gameChoice() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú °ÔÀÓÀ» °ñ¶óº¸ÀÚ ¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
+		System.out.println("â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜… ê²Œì„ì„ ê³¨ë¼ë³´ì â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…â˜†â˜…");
 		System.out.println();
-		System.out.println("1¹ø : µ¿Àü ¾ÕµÚ ¸ÂÃß±â    2¹ø : ·Î¶Ç ¹øÈ£ ÀÚµ¿ »ı¼º±â");
+		System.out.println("1ë²ˆ : ë™ì „ ì•ë’¤ ë§ì¶”ê¸°    2ë²ˆ : ë¡œë˜ ë²ˆí˜¸ ìë™ ìƒì„±ê¸°");
 		System.out.println();
-		System.out.print("¹«¾ùÀ» ¼±ÅÃÇÒ±î? : ");
+		System.out.print("ë¬´ì—‡ì„ ì„ íƒí• ê¹Œ? : ");
 		int menu = sc.nextInt();
 		if (menu == 1) {
 			Scanner sc1 = new Scanner(System.in);
 			Random rand = new Random();
-			System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú µ¿Àü ¾Õ µÚ ¸ÂÃß±â °ÔÀÓ¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
-			System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. (1. ¾Õ¸é / 2. µŞ¸é) : ");
+			System.out.println("â˜†â˜…â˜†â˜…â˜†â˜… ë™ì „ ì• ë’¤ ë§ì¶”ê¸° ê²Œì„â˜†â˜…â˜†â˜…â˜†â˜…");
+			System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”. (1. ì•ë©´ / 2. ë’·ë©´) : ");
 			int choice = sc.nextInt();
 			int computer = rand.nextInt(2) + 1;
 			System.out.println(".");
 			System.out.println(".");
 			System.out.println(".");
-			System.out.println("ÄÄÇ»ÅÍ´Â " + computer + " À»/¸¦ °ñ¶ú³×¿ä!");
+			System.out.println("ì»´í“¨í„°ëŠ” " + computer + " ì„/ë¥¼ ê³¨ëë„¤ìš”!");
 
 			if (choice == computer) {
-				System.out.println("¸ÂÃè½À´Ï´Ù!");
+				System.out.println("ë§ì·„ìŠµë‹ˆë‹¤!");
 			} else {
-				System.out.println("Æ²·È½À´Ï´Ù!");
+				System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤!");
 
 			}
 		} else {
-			System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú ·Î¶Ç ¹øÈ£¸¦ ÀÚµ¿À¸·Î ÃßÃ·ÇÕ´Ï´Ù ¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
+			System.out.println("â˜†â˜…â˜†â˜…â˜†â˜… ë¡œë˜ ë²ˆí˜¸ë¥¼ ìë™ìœ¼ë¡œ ì¶”ì²¨í•©ë‹ˆë‹¤ â˜†â˜…â˜†â˜…â˜†â˜…");
 			System.out.println(".");
 			System.out.println(".");
 			System.out.println(".");
@@ -104,70 +104,18 @@ public class GameFunction {
 			for (int i = 0; i < lotto.length; i++) {
 				System.out.printf(lotto[i] + " ");
 			}
-			System.out.printf("Â¥ÀÜ~" + "%n");
+			System.out.printf("ì§œì”~" + "%n");
 			System.out.println();
 		}
 	}
 
-//	public void coinGame() {
-//		Scanner sc = new Scanner(System.in);
-//		Random rand = new Random();
-//		System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú µ¿Àü ¾Õ µÚ ¸ÂÃß±â¸¦ ¼±ÅÃÇÏ¼Ì³×¿ä! ¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
-//		System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú ½ÃÀÛÇØº¼±î¿ä! ¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
-//		System.out.println(".");
-//		System.out.println(".");
-//		System.out.println(".");
-//		System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. (1. ¾Õ¸é / 2. µŞ¸é) : ");
-//		int choice = sc.nextInt();
-//		int computer = rand.nextInt(2) + 1;
-//		System.out.println("ÄÄÇ»ÅÍ´Â ... " + computer + " À» °ñ¶ú³×¿ä!");
-//
-//		if (choice == computer) {
-//			System.out.println("¸ÂÃè½À´Ï´Ù!");
-//		} else {
-//			System.out.println("Æ²·È½À´Ï´Ù¤Ì¤Ì");
-//
-//		}
-//	}
 
-//	public void lottoGame() {
-//		System.out.println("¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú ·Î¶Ç ¹øÈ£¸¦ ÀÚµ¿À¸·Î ÃßÃ·ÇÕ´Ï´Ù~ ¡Ù¡Ú¡Ù¡Ú¡Ù¡Ú");
-//		System.out.println(".");
-//		System.out.println(".");
-//		System.out.println(".");
-//		int[] lotto = new int[6];
-//		Random rand = new Random();
-//		for (int i = 0; i < lotto.length; i++) {
-//			lotto[i] = rand.nextInt(45) + 1;
-//			for (int j = 0; j < i; j++) {
-//				if (lotto[i] == lotto[j]) {
-//					i--;
-//					break;
-//				}
-//			}
-//		}
-//		for (int i = 0; i < lotto.length; i++) {
-//			for (int j = i + 1; j < lotto.length; j++) {
-//				if (lotto[i] > lotto[j]) {
-//					int temp = lotto[i];
-//					lotto[i] = lotto[j];
-//					lotto[j] = temp;
-//				}
-//
-//			}
-//
-//		}
-//		for (int i = 0; i < lotto.length; i++) {
-//			System.out.print(lotto[i] + " ");
-//		}
-//		System.out.println();
-//	}
 
 	public void goodByeMsg() {
-		System.out.println("È¥ÀÚ ³î±â¸¦ ³¡³À´Ï´Ù. Bye~");
+		System.out.println("í˜¼ì ë†€ê¸°ë¥¼ ëëƒ…ë‹ˆë‹¤. Bye~");
 	}
 
 	public void exceptionMsg() {
-		System.out.println("1 ~ 4»çÀÌÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.println("1 ~ 4ì‚¬ì´ì˜ ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 	}
 }
