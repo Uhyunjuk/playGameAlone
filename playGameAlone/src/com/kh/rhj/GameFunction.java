@@ -20,7 +20,7 @@ public class GameFunction {
 		System.out.println("4. 혼자놀기 끝");
 		System.out.println();
 		System.out.print("무엇을 선택할까? : ");
-//		System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
+		System.out.println("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★");
 		int menu = sc.nextInt();
 		return menu;
 	}
