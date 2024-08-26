@@ -1,7 +1,7 @@
 # Java-Console Project
 ## playGameAlone
 
-## :computer: 주제
+## :pencil2: 주제
 혼자 놀기 게임
 
 ## :pushpin: 요구사항
@@ -9,7 +9,7 @@
 2. 게임을 선택할 수 있다.
 3. 혼자 놀기를 끝낼 수 있다
 
-## :pencil2: 동작화면
+## :computer: 동작화면
 
 ### - 메인화면 
 ☆★☆★☆★ 혼자 놀기 ☆★☆★☆★
